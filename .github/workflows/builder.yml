@@ -217,7 +217,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   linux-build:
-    runs-on: ubuntu-20.04 # Do not run on ubuntu-latest or linuxdeployqt will fail
+    runs-on: ubuntu-22.04 # Do not run on ubuntu-latest or linuxdeployqt will fail
     needs: create-release
 
     strategy:
